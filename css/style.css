@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  scrollbar-width: none;
+  color: white;
+}
+
+body::-webkit-scrollbar {
+  width: none;
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  margin: 1em 0;
+  border-radius: 25px;
+  border: 2px solid;
+  background: none;
+  color: white;
+}
+
+.pages {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-transform: rotateY(10deg) skewY(-5deg);
+          transform: rotateY(10deg) skewY(-5deg);
+  -webkit-transition: .5s linear;
+  transition: .5s linear;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  height: 100vh;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.pages .home,
+.pages .about,
+.pages .project,
+.pages .contact {
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  padding-bottom: 100px;
+}
+
+.pages::-webkit-scrollbar {
+  display: none;
+}
+
+.pages h1 {
+  font-size: 5rem;
+  color: white;
+}
+
+.pages:hover {
+  -webkit-transform: skewY(0deg);
+          transform: skewY(0deg);
+}
+
+.container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+}
+
+.card {
+  width: 100%;
+  padding: 2em;
+}
+
+.card img {
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
+  min-height: 100vh;
+  background-color: black;
+  color: gray;
+  gap: 1em;
+  font-family: sans-serif;
+  z-index: -2;
+}
+
+.cont {
+  width: 30%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  height: 100%;
+}
+
+.div {
+  width: 500px;
+  height: 100px;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  -webkit-transform-style: "0% 50% -15px";
+          transform-style: "0% 50% -15px";
+}
+
+.div li {
+  -webkit-transform: rotateY(50deg) skewY(10deg);
+          transform: rotateY(50deg) skewY(10deg);
+  font-size: 5rem;
+  list-style: none;
+  font-weight: 700;
+  text-align: right;
+  position: relative;
+  overflow: hidden;
+}
+
+.div li::before {
+  content: '';
+  width: 5px;
+  height: 100%;
+  background-color: #2c2c2c;
+  position: absolute;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  top: 0;
+  left: 0;
+}
+
+.div:hover li {
+  -webkit-transform: rotateY(0deg) skewX(0deg);
+          transform: rotateY(0deg) skewX(0deg);
+  color: white;
+  z-index: 100;
+}
+
+.div:hover li::before {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+li {
+  -webkit-transition: .5s linear;
+  transition: .5s linear;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  font-size: 5rem;
+}
+
+img {
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  margin-top: 10px;
+}
+
+.hide {
+  display: none;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form * {
+  margin: 1em 0;
+}
+
+form input {
+  padding: 1em;
+  border: none;
+  background: none;
+  color: white;
+  border-bottom: 2px solid gray;
+  outline: none;
+}
+
+form label {
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1em;
+  margin-top: 10px;
+}
+
+.project img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  margin: 100px 0;
+}
+/*# sourceMappingURL=style.css.map */

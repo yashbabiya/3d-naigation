@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhotoJ</title>
+    <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    
+    <div class="body">
+     <div class="pages">
+           <div class="home">
+               <h1>Home</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A nemo harum temporibus suscipit assumenda quasi, eveniet laudantium odit ratione corrupti esse voluptatum! Aspernatur quibusdam incidunt quo consectetur sapiente, laudantium odit id vitae odio fugiat repellat alias quam, autem error ab!</p>
+                <button>Read More</button>
+           </div>
+           <div class="about hide">
+            <h1>About</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis aperiam repudiandae et tempora itaque ducimus soluta repellendus temporibus facere similique!</p>
+            <div class="container">
+                <div class="card">
+                    <img src="https://picsum.photos/150/150?grayscale" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptate nesciunt aperiam eum nam pariatur doloremque nulla quisquam atque tempore!</p>
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/150/150?grayscale" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptate nesciunt aperiam eum nam pariatur doloremque nulla quisquam atque tempore!</p>
+                </div>
+            </div>
+        </div>
+        <div class="project hide">
+            <h1>Projects</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod sit blanditiis, ducimus inventore dolorum maiores veritatis nulla placeat deleniti delectus autem vero asperiores consequatur earum perspiciatis similique omnis fuga quia!</p>
+            <img src="/img/1.jpg" alt="">
+            <h2>Product Photography</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quidem numquam cumque recusandae, culpa non temporibus magni molestiae necessitatibus rerum.</p>
+            <img src="/img/2.jpg" alt="">
+            <h2>Production </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quidem numquam cumque recusandae, culpa non temporibus magni molestiae necessitatibus rerum.</p>
+            <img src="/img/3.jpg" alt="">
+            <h2>Cover Shoot</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quidem numquam cumque recusandae, culpa non temporibus magni molestiae necessitatibus rerum.</p>
+
+        </div>
+        <div class="contact hide">
+            <h1>Contact</h1>
+            <form>
+                <label for="name">Name</label>
+                <input name="name" type="text">
+
+                <label for="msg">Message</label>
+                <input name="msg" type="text">
+
+                <button type="submit">Send</button>
+
+            </form> 
+            <div class="social">
+                <i class="im im-facebook"></i>
+                <i class="im im-instagram"></i>
+                <i class="im im-linkedin"></i>
+                <i class="im im-github"></i>
+                <i class="im im-mail"></i>
+
+
+            </div>
+        </div>
+     </div>
+       <div class="cont">
+            <div class="div" onclick="page(0)"><li>Home</li></div>
+           <div class="div" onclick="page(1)"> <li>About</li></div>
+            <div class="div" onclick="page(2)"><li>Projects</li></div>
+            <div class="div" onclick="page(3)"><li>Contact</li></div>
+       </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
